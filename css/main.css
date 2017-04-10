@@ -1,0 +1,17 @@
+#banner {
+	text-align:center;
+	padding-top: 100px;
+}
+
+#myBtn {
+	margin-top: -40px;
+}
+
+.wrapper {
+	padding-top:100px;
+}
+
+.main .btn {
+	width:100px;
+	margin-left:10px;
+}

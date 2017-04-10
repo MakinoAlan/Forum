@@ -1,0 +1,11 @@
+.loginPanel {
+	margin-top: 300px;
+}
+
+.loginPanel h1 {
+	text-align: center;
+}
+
+.btn {
+	width:100px;
+}
