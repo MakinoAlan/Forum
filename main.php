@@ -71,7 +71,7 @@
 					<div class="row">
 						<a class="btn btn-default pull-left" href="add.php" role="button">Create</a>
 						<a class="btn btn-default pull-right" href="edit.php" role="button">Edit</a>
-						<a class="btn btn-default pull-right" href="php/Delete.php" role="button">Delete</a>
+						<a class="btn btn-default pull-right" href="php/Delete.php" onclick="return confirm('Are you sure?');" role="button">Delete</a>
 					</div>
 
 				</div>
