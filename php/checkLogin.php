@@ -21,7 +21,7 @@
 			if($username == $table_users && $table_password == $password) {
 				$_SESSION['user'] = $username;
 				$_SESSION['id'] = $table_id;
-				header("location:../main.php");
+				header("location:../prim.php");
 			}
 			else {
 				print '<script>alert("Incorrect Password");<script>';

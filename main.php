@@ -22,6 +22,7 @@
 				<h1 id="banner">Welcom back <?php print "$user"?> !</h1>
 				<div id="myBtn">
 					<a class="btn btn-default pull-right" href="php/logout.php" role="button">Log Out</a>
+					<a class="btn btn-default pull-right" href="prim.php">PostBoard</a>
 				</div>
 			</div>
 		</div>
@@ -43,27 +44,27 @@
 								print "<tr>";
 									print '<td style="width:20%">First Name</td>'; 
 									print '<td align="center">' . $row['firstname'] . "</td>";
-								print "<tr>";
+								print "</tr>";
 								print "<tr>";
 									print '<td style="width:20%">Last Name</td>'; 
 									print '<td align="center">' . $row['lastname'] . "</td>";
-								print "<tr>";
+								print "</tr>";
 								print "<tr>";
 									print '<td style="width:20%">Gender</td>'; 
 									print '<td align="center">' . $row['gender'] . "</td>";
-								print "<tr>";
+								print "</tr>";
 								print "<tr>";
 									print '<td style="width:20%">Birth Date</td>'; 
 									print '<td align="center">' . $row['birthdate'] . "</td>";
-								print "<tr>";
+								print "</tr>";
 								print "<tr>";
 									print '<td style="width:20%">Email</td>'; 
 									print '<td align="center">' . $row['email'] . "</td>";
-								print "<tr>";
+								print "</tr>";
 								print "<tr>";
 									print '<td style="width:20%">Self Introduction</td>'; 
 									print '<td align="center" style="height:50px">' . $row['intro'] . "</td>";
-								print "<tr>";
+								print "</tr>";
 							}
 						?>
 					</table>
