@@ -46,6 +46,7 @@
 						}
 						else {
 							while($row = mysql_fetch_assoc($query)) {
+								$postid = $row['post_id'];
 								$title = $row['title'];
 								$userid = $row['user_id'];
 								$time = $row['create_date'];
@@ -54,7 +55,7 @@
 								$author = $row_one['username'];
 
 								print "<tr>";
-									print '<td align="center">' . $title . "</td>";
+									print '<td align="center"><a href="detail.php?id=' . $postid . '">' . $title . "</a></td>";
 									print '<td align="center">' . $author . "</td>";
 									print '<td align="center">' . $time . "</td>";
 								print "</tr>";

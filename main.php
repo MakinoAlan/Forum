@@ -2,7 +2,9 @@
 <html>
 	<head>
 		<title>Main Page</title>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.2.0/jquery-confirm.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.2.0/jquery-confirm.min.css">
 		<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		<link rel='stylesheet' href='css/main.css'/>
 	</head>
@@ -72,11 +74,28 @@
 					<div class="row">
 						<a class="btn btn-default pull-left" href="add.php" role="button">Create</a>
 						<a class="btn btn-default pull-right" href="edit.php" role="button">Edit</a>
-						<a class="btn btn-default pull-right" href="php/Delete.php" onclick="return confirm('Are you sure?');" role="button">Delete</a>
+						<a class="btn btn-default pull-right" id="spec" href="php/Delete.php" role="button">Delete</a>
 					</div>
 
 				</div>
 			</div>
 		</div>
 	</body>
+
+	<script>
+		$(document).ready(function() {
+			$('#spec').click().confirm({
+			    title: 'DELET YOUR INFO',
+			    content: 'This action will delete your personal information pernamently, are you sure?',
+			    buttons: {
+        			confirm: function () {
+            			$.alert('Confirmed!');
+        			},
+        			cancel: function () {
+            			$.alert('Canceled!');
+        			}
+    			}
+			});
+		});
+	</script>
 </html>

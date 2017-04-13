@@ -10,3 +10,8 @@
 th {
 	text-align: center;
 }
+
+.btn {
+	width:100px;
+	margin-left:10px;
+}
