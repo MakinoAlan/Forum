@@ -25,5 +25,6 @@
 
 	} else {
 		Print '<srcipt>alert("The username is not exist, please check it again");</script>';
+		header("location:index.html");
 	}
 ?>

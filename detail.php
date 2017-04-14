@@ -47,22 +47,5 @@
 			</div>
 		</div>
 	</body>
-	<script>
-		$(document).ready(function() {
-			$('#spec').click().confirm({
-			    title: 'DELET YOUR POST',
-			    content: 'This action will delete your post pernament, are you sure?',
-			    buttons: {
-        			confirm: function () {
-            			$.alert('Confirmed!');
-        			},
-        			cancel: function () {
-            			$.alert('Canceled!');
-        			}
-    			}
-			});
-		});
-		
-	</script>
 
 </html>

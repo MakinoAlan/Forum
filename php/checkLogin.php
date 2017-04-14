@@ -28,7 +28,8 @@
 			}
 
 		} else {
-			Print '<srcipt>alert("The username is not exist, please check it again");</script>';
+			Print '<script>alert("The username is not exist, please check it again");</script>';
+			print '<script>window.location.assign("../index.html");</script>';
 		}
 	}
 ?>

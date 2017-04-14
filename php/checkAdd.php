@@ -14,12 +14,13 @@
 		$gender = mysql_real_escape_string($_POST['gender']);
 		$birthdate = mysql_real_escape_string($_POST['birthdate']);
 		$email = mysql_real_escape_string($_POST['email']);
+		$phone = mysql_real_escape_string($_POST['phone']);
 		$intro = mysql_real_escape_string($_POST['intro']);
 
 		mysql_connect("localhost", "root", "") or die(mysql_error());
 		mysql_select_db("alan_db_one") or die("Cannot connect to Database");
 
-		mysql_query("INSERT INTO userlist(id, firstname, lastname, gender, birthdate, email, intro) VALUES ('$id','$firstname','$lastname','$gender','$birthdate','$email','$intro')");
+		mysql_query("INSERT INTO userlist(id, firstname, lastname, gender, birthdate, email, phone, intro) VALUES ('$id','$firstname','$lastname','$gender','$birthdate','$email','$phone','$intro')");
 
 		print '<script>alert("Add successfuly!");</script>';
 		print '<script>window.location.assign("../main.php");</script>';

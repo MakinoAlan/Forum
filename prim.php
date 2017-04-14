@@ -15,7 +15,7 @@
 		}
 		$user = $_SESSION['user'];
 		$id = $_SESSION['id'];
-	?>
+	?> 
 
 	<body>
 		<div class="header">

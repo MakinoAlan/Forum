@@ -13,6 +13,7 @@
 				$bool = false;
 				print '<script>alert("Username has been taken!");</script>';
 				print '<script>window.location.assign("register.php);</script>';
+				
 			}
 		}
 

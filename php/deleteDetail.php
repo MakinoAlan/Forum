@@ -13,4 +13,5 @@
 
 	mysql_query("DELETE FROM posts WHERE post_id = '$postid'");
 	header("location:../prim.php");
+	
 ?>

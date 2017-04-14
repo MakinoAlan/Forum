@@ -1,5 +1,5 @@
 .loginPanel {
-	margin-top: 300px;
+	margin-top: 300px; 
 }
 
 .loginPanel h1 {
@@ -7,5 +7,9 @@
 }
 
 .btn {
-	width:100px;
+	width:100px; 
+}
+
+html {
+
 }

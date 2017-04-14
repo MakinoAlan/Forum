@@ -57,6 +57,10 @@
 						<input type="text" class="form-control" name="email" placeholder="xxxx@example.com">
 					</div>
 					<div class="form-group">
+						<label>Phone Number</label>
+						<input type="text" class="form-control" name="phone" placeholder="+19876543210">
+					</div>
+					<div class="form-group">
 						<label>Self Introduction</label>
 						<textarea class="form-control" rows="5" name="intro"></textarea>
 					</div>

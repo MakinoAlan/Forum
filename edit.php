@@ -38,6 +38,7 @@
 								$gender = $row['gender'];
 								$birthdate = $row['birthdate'];
 								$email = $row['email'];
+								$phone = $row['phone'];
 								$intro = $row['intro'];
 							}
 				?>	
@@ -61,6 +62,10 @@
 					<div class="form-group">
 						<label>Email</label>
 						<input type='text' class='form-control la' name="email" value=<?php print "$email"?>>
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input type='text' class='form-control la' name="phone" value=<?php print "$phone"?>>
 					</div>
 					<div class="form-group">
 						<label>Self Introduction</label>

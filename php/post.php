@@ -21,5 +21,6 @@
 
 		print '<script>alert("Post successfuly!");</script>';
 		print '<script>window.location.assign("../prim.php");</script>';
+		
 	}
 ?>

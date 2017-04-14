@@ -25,6 +25,11 @@
 				<div id="myBtn">
 					<a class="btn btn-default pull-right" href="php/logout.php" role="button">Log Out</a>
 					<a class="btn btn-default pull-right" href="prim.php">PostBoard</a>
+					<?php
+						if($id==2) {
+							print "<a class='btn btn-default pull-right' href='verification.php'>Verification</a>";
+						}
+					?>
 				</div>
 			</div>
 		</div>
@@ -64,6 +69,10 @@
 									print '<td align="center">' . $row['email'] . "</td>";
 								print "</tr>";
 								print "<tr>";
+									print '<td style="width:20%">Phone</td>'; 
+									print '<td align="center">' . $row['phone'] . "</td>";
+								print "</tr>";
+								print "<tr>";
 									print '<td style="width:20%">Self Introduction</td>'; 
 									print '<td align="center" style="height:50px">' . $row['intro'] . "</td>";
 								print "</tr>";
@@ -74,7 +83,7 @@
 					<div class="row">
 						<a class="btn btn-default pull-left" href="add.php" role="button">Create</a>
 						<a class="btn btn-default pull-right" href="edit.php" role="button">Edit</a>
-						<a class="btn btn-default pull-right" id="spec" href="php/Delete.php" role="button">Delete</a>
+						<a class="btn btn-default pull-right" id="spec" role="button">Delete</a>
 					</div>
 
 				</div>
@@ -89,7 +98,7 @@
 			    content: 'This action will delete your personal information pernamently, are you sure?',
 			    buttons: {
         			confirm: function () {
-            			$.alert('Confirmed!');
+            			window.location.href="php/delete.php";
         			},
         			cancel: function () {
             			$.alert('Canceled!');
