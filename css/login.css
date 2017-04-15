@@ -1,5 +1,23 @@
+.header {
+	color:white;
+	margin-top:100px;
+	text-align: center;
+}
+
+.header h1 {
+	font-size: 70px;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.header h2 {
+	margin-top:50px;
+	font-family: 'Rubik Mono One', sans-serif;
+}
+
 .loginPanel {
-	margin-top: 300px; 
+	color:white;
+	font-family: 'Merriweather', serif;
+	margin-top: 50px; 
 }
 
 .loginPanel h1 {

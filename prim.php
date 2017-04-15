@@ -3,7 +3,17 @@
 		<title>Post Page</title>
 
 		<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
 		<link rel='stylesheet' href='css/prim.css'/>
+		<link rel='stylesheet' href='css/footable.bootstrap.css'/>
+		<link rel='stylesheet' href='css/footable.bootstrap.min.css'/>
+		<script src="libs/jquery/jquery.js"></script>
+		<script src="libs/jquery/jquery.backstretch.min.js"></script>
+		<script src="js/footable.js"></script>
+		<script src="js/footable.min.js"></script>
 	</head>
 
 	<?php
@@ -21,7 +31,7 @@
 		<div class="header">
 			<div class="container">
 				<div class="row">
-					<h1>Post Page</h1>
+					<h1>Say Anything You Want</h1>
 					<a class="btn btn-default pull-right" href="php/logout.php" role="button">Log Out</a>
 					<a class="btn btn-default pull-right" href="main.php">Profile</a>
 				</div>
@@ -30,12 +40,15 @@
 
 		<div class="main">
 			<div class="container">
-				<table class="table table-bordered" style="width:100%">
-					<tr>
-						<th style="width:60%">Title</th>
-						<th>Author</th>
-						<th>time posted</th>
-					</tr>
+				<table class="table table-hover" data-paging="true" data-sorting="true" style="width:100%">
+					<thead>
+						<tr>
+							<th style="width:60%">Title</th>
+							<th>Author</th>
+							<th data-type="date" data-format-string="MMMM Do YYYY">time posted</th>
+						</tr>
+					</thead>
+					<tbody>
 					<?php
 						mysql_connect("localhost", "root", "") or die(mysql_error());
 						mysql_select_db("alan_db_one") or die("Cannot connect to Database");
@@ -62,6 +75,7 @@
 							}
 						}
 					?>
+					</tbody>
 				</table>
 			</div>
 		</div>
@@ -81,5 +95,9 @@
 				</form>
 			</div>
 		</div>
+		<script>
+			$.backstretch("img/bg3.jpg");
+			$('.table').footable();
+		</script>
 	</body>
 </html>

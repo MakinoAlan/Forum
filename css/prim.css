@@ -1,5 +1,9 @@
+
 .header h1 {
 	text-align: center;
+	color:#e6edf7;
+	font-size: 50px;
+	font-family: 'Concert One', cursive;
 }
 
 .header {
@@ -14,4 +18,56 @@ th {
 .btn {
 	width:100px;
 	margin-left:10px;
+}
+
+.main .container{
+	height:400px;
+}
+
+.add {
+
+	margin-top:350px;
+	margin-bottom:50px;
+}
+
+form {
+	padding-left:200px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.add input{
+	width:80%;
+	opacity: 0.8;
+}
+
+textarea {
+
+	width:80% !important;
+}
+
+
+table {
+	background:url("../img/bg1.jpg") no-repeat center center;
+	background-size: cover;
+	opacity: 0.8;
+	border-radius: 10px;
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+}
+
+tr {
+	height:50px;
+}
+
+tr a {
+	line-height: 2;
+}
+
+table a {
+	color:black;
+}
+
+.btn {
+	font-size: 18px;
+	font-family: 'Passion One', cursive;
 }
