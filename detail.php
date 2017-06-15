@@ -24,6 +24,10 @@
 
 	$query = mysql_query("SELECT * FROM posts WHERE post_id='$postid'");
 
+	$title = "";
+	$content = "";
+	$currentid = "";
+
 	while($row = mysql_fetch_assoc($query)) {
 		$title = $row['title'];
 		$content = $row['content'];
@@ -33,7 +37,7 @@
 	<body>
 		<div class="main">
 			<div class="container">
-				<h1><?php print "$title" ?></h1>
+				<h1><?php print $title ?></h1>
 				<div class="panel">
 					<p><?php print "$content"?><p>
 				</div>
